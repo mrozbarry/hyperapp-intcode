@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-    "test": "ava"
+    "test": "nyc ava"
   },
   "dependencies": {
     "hyperapp": "^2.0.3"
@@ -20,12 +20,6 @@
   "ava": {
     "require": [
       "esm"
-    ],
-    "files": [
-      "src/**/*.test.js"
-    ],
-    "source": [
-      "src/**/*.js"
     ]
   }
 }
