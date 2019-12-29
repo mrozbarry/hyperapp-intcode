@@ -1,0 +1,37 @@
+{
+  "name": "hyperapp-intcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "ava"
+  },
+  "dependencies": {
+    "hyperapp": "^2.0.3"
+  },
+  "devDependencies": {
+    "@ava/babel-preset-stage-4": "^4.0.0",
+    "@ava/babel-preset-transform-test-files": "^6.0.0",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/register": "^7.7.7",
+    "ava": "2.3.0",
+    "esm": "^3.2.25",
+    "nyc": "^15.0.0",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.24.0"
+  },
+  "ava": {
+    "require": [
+      "esm",
+      "@babel/register"
+    ],
+    "files": [
+      "src/**/*.test.js"
+    ],
+    "source": [
+      "src/**/*.js"
+    ]
+  }
+}
