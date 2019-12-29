@@ -11,11 +11,6 @@
     "hyperapp": "^2.0.3"
   },
   "devDependencies": {
-    "@ava/babel-preset-stage-4": "^4.0.0",
-    "@ava/babel-preset-transform-test-files": "^6.0.0",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "@babel/register": "^7.7.7",
     "ava": "2.3.0",
     "esm": "^3.2.25",
     "nyc": "^15.0.0",
@@ -24,8 +19,7 @@
   },
   "ava": {
     "require": [
-      "esm",
-      "@babel/register"
+      "esm"
     ],
     "files": [
       "src/**/*.test.js"
